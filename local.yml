@@ -1,0 +1,17 @@
+ - hosts: localhost
+   pre_tasks:
+     - name: Update Apt and upgrade packages
+       become: true
+       apt:
+         update_cache: true
+         upgrade: true
+         state: present
+   tasks:
+     - import_tasks: tasks/git.yml
+     - import_tasks: tasks/node.yml 
+     - import_tasks: tasks/nvim.yml
+     - import_tasks: tasks/conda.yml
+     - import_tasks: tasks/tmux.yml
+     - import_tasks: tasks/direnv.yml
+     - import_tasks: tasks/rust.yml
+     - import_tasks: tasks/dotfiles.yml

@@ -1,0 +1,2 @@
+- name: Initialize ChezMoi
+  shell: cd && sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --force PookieBuns

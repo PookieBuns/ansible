@@ -1,0 +1,5 @@
+- name: Install Tmux
+  become: true
+  apt:
+    name: tmux
+    state: present

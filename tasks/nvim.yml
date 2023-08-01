@@ -1,0 +1,35 @@
+- name: Remove Previous Neovim
+  file:
+    path: ~/nvim-linux64
+    state: absent
+- name: Download Neovim
+  get_url:
+    url: https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+    dest: /tmp/nvim.tar.gz
+- name: Extract Tarball
+  unarchive:
+    src: /tmp/nvim.tar.gz
+    dest: ~/
+- name: Create undo directories
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - ~/.vim/backup/nvim
+    - ~/.vim/backup/vim
+- name: Download win32yank
+  get_url:
+    url: https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+    dest: /tmp/win32yank.zip
+- name: Unzip win32yank
+  unarchive:
+    src: /tmp/win32yank.zip
+    dest: /tmp/
+    remote_src: yes
+    extra_opts: 
+      - -j 
+- name: Make win32yank executable
+  shell: chmod +x /tmp/win32yank.exe
+- name: Move win32yank
+  become: true
+  shell: mv /tmp/win32yank.exe /usr/local/bin/
