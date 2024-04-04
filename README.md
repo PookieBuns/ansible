@@ -9,3 +9,4 @@
 - [ ] Install Texlive apt
 - [ ] Install latexmk apt
 - [ ] Install SumatraPDF and put it in bin
+- [ ] Change win32yank installation to C drive
