@@ -22,22 +22,22 @@
   apt:
     name: unzip
     state: present
-- name: Download win32yank
-  get_url:
-    url: https://github.com/equalsraf/win32yank/releases/latest/download/win32yank-x64.zip
-    dest: /tmp/win32yank.zip
-- name: Unzip win32yank
-  unarchive:
-    src: /tmp/win32yank.zip
-    dest: /tmp/
-    remote_src: yes
-    extra_opts:
-      - -j
-- name: Make win32yank executable
-  shell: chmod +x /tmp/win32yank.exe
-- name: Move win32yank
-  become: true
-  shell: mv /tmp/win32yank.exe /usr/local/bin/
+# - name: Download win32yank
+#   get_url:
+#     url: https://github.com/equalsraf/win32yank/releases/latest/download/win32yank-x64.zip
+#     dest: /tmp/win32yank.zip
+# - name: Unzip win32yank
+#   unarchive:
+#     src: /tmp/win32yank.zip
+#     dest: /tmp/
+#     remote_src: yes
+#     extra_opts:
+#       - -j
+# - name: Make win32yank executable
+#   shell: chmod +x /tmp/win32yank.exe
+# - name: Move win32yank
+#   become: true
+#   shell: mv /tmp/win32yank.exe /usr/local/bin/
 - name: Remove Previous Code Minimap
   file:
     path: ~/code-minimap
