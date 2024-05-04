@@ -8,5 +8,6 @@
   become: true
 - name: Change zsh to default shell
   user:
-   name: "{{ whoami.stdout }}"
-   shell: /bin/zsh
+    name: "{{ whoami.stdout }}"
+    shell: /bin/zsh
+  become: true

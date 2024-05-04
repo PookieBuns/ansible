@@ -1,2 +1,2 @@
 - name: Initialize ChezMoi
-  shell: cd && chezmoi init --apply --force PookieBuns
+  shell: cd && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && chezmoi init --apply --force PookieBuns
