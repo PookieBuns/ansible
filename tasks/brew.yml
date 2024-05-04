@@ -1,0 +1,31 @@
+- name: install brew
+  shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+- name: install build-essential
+  become: true
+  apt:
+    name: build-essential
+    state: present
+- name: Install tmux
+  community.general.homebrew:
+    name: tmux
+    state: present
+- name: Install Neovim
+  community.general.homebrew:
+    name: nvim
+    state: present
+- name: Install direnv
+  community.general.homebrew:
+    name: direnv
+    state: present
+- name: Install ripgrep
+  community.general.homebrew:
+    name: ripgrep
+    state: present
+- name: Install starship
+  community.general.homebrew:
+    name: starship
+    state: present
+- name: Install chezmoi
+  community.general.homebrew:
+    name: chezmoi
+    state: present

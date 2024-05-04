@@ -1,0 +1,12 @@
+- name: Get User Name
+  command: whoami
+  register: whoami
+- name: Install Zsh
+  apt:
+    name: zsh
+    state: present
+  become: true
+- name: Change zsh to default shell
+  user:
+   name: "{{ whoami.stdout }}"
+   shell: /bin/zsh

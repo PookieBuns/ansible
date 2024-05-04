@@ -1,5 +1,0 @@
-- name: Install Direnv
-  become: true
-  apt:
-    name: direnv
-    state: present

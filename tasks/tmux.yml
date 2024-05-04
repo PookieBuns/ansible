@@ -1,9 +1,0 @@
-- name: Install Tmux
-  become: true
-  apt:
-    name: tmux
-    state: present
-- name: Install TPM
-  ansible.builtin.git:
-    repo: "https://github.com/tmux-plugins/tpm"
-    dest: "~/.tmux/plugins/tpm"
