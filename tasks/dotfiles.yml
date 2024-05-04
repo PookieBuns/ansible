@@ -1,2 +1,2 @@
 - name: Initialize ChezMoi
-  shell: cd && source ~/ansible/activate_brew.sh && chezmoi init --apply --force PookieBuns
+  shell: bash activate_brew.sh && chezmoi init --apply --force PookieBuns
