@@ -1,2 +1,2 @@
 - name: Initialize ChezMoi
-  shell: cd && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && chezmoi init --apply --force PookieBuns
+  shell: cd && source ~/ansible/activate_brew.sh && chezmoi init --apply --force PookieBuns
