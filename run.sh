@@ -1,5 +1,5 @@
 sudo apt update
 sudo apt install pipx
-pipx ensurepath
-source ~/.bashrc
+pipx install --include-deps ansible
+export PATH="$PATH:~/.local/bin"
 ansible-playbook --ask-become-pass local.yml

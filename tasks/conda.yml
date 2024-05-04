@@ -3,7 +3,7 @@
     path: ~/miniconda3
     state: directory
 - name: Download Miniconda installer script
-  shell: bash smart_download_conda.sh
+  shell: bash download_conda.sh
 - name: Install Miniconda
   shell: bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 - name: Remove Miniconda installer script
