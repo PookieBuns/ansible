@@ -6,7 +6,7 @@
 2. execute `run.sh` from root
 
 ## TODO
-- [ ] Install Texlive apt
-- [ ] Install latexmk apt
-- [ ] Install SumatraPDF and put it in bin
 - [ ] Change win32yank installation to C drive
+- [ ] brew install zsh-autosuggestions
+- [ ] brew install fzf
+- [ ] brew install zoxide
