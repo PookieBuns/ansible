@@ -10,3 +10,7 @@
 - [ ] brew install zsh-autosuggestions
 - [ ] brew install fzf
 - [ ] brew install zoxide
+- [ ] brew install tree
+- [ ] brew install bat
+- [ ] brew install joshmedeski/sesh/sesh
+- [ ] git clone https://github.com/PookieBuns/fzf-sesh.git ~/.local/share/fzf-sesh
