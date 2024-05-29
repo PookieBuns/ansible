@@ -7,10 +7,10 @@
 
 ## TODO
 - [ ] Change win32yank installation to C drive
-- [ ] brew install zsh-autosuggestions
-- [ ] brew install fzf
-- [ ] brew install zoxide
-- [ ] brew install tree
-- [ ] brew install bat
-- [ ] brew install joshmedeski/sesh/sesh
+- [x] brew install zsh-autosuggestions
+- [x] brew install fzf
+- [x] brew install zoxide
+- [x] brew install tree
+- [x] brew install bat
+- [x] brew install joshmedeski/sesh/sesh
 - [ ] git clone https://github.com/PookieBuns/fzf-sesh.git ~/.local/share/fzf-sesh

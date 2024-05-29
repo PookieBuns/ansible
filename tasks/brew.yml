@@ -29,3 +29,27 @@
   community.general.homebrew:
     name: chezmoi
     state: present
+- name: Install zsh-autosuggestions
+  community.general.homebrew:
+    name: zsh-autosuggestions
+    state: present
+- name: Install fzf
+  community.general.homebrew:
+    name: fzf
+    state: present
+- name: Install zoxide
+  community.general.homebrew:
+    name: zoxide
+    state: present
+- name: Install tree
+  community.general.homebrew:
+    name: tree
+    state: present
+- name: Install bat
+  community.general.homebrew:
+    name: bat
+    state: present
+- name: Install sesh
+  community.general.homebrew:
+    name: joshmedeski/sesh/sesh
+    state: present
