@@ -49,7 +49,19 @@
   community.general.homebrew:
     name: bat
     state: present
+- name: Install fd
+  community.general.homebrew:
+    name: fd
+    state: present
 - name: Install sesh
   community.general.homebrew:
     name: joshmedeski/sesh/sesh
+    state: present
+- name: Install uv
+  community.general.homebrew:
+    name: uv
+    state: present
+- name: Install pngpaste
+  community.general.homebrew:
+    name: pngpaste
     state: present

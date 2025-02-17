@@ -13,8 +13,6 @@
        tags: brew
      - import_tasks: tasks/dotfiles.yml
        tags: dotfiles
-     - import_tasks: tasks/conda.yml
-       tags: conda
      - import_tasks: tasks/rust.yml
        tags: rust
      - import_tasks: tasks/node.yml 

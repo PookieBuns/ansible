@@ -1,7 +1,6 @@
 # ansible
 
 ## HOW TO USE
-1. Install ansible with `pip install ansible`
 1. clone repository
 2. execute `run.sh` from root
 
@@ -13,4 +12,4 @@
 - [x] brew install tree
 - [x] brew install bat
 - [x] brew install joshmedeski/sesh/sesh
-- [ ] git clone https://github.com/PookieBuns/fzf-sesh.git ~/.local/share/fzf-sesh
+- [x] git clone https://github.com/PookieBuns/fzf-sesh.git ~/.local/share/fzf-sesh

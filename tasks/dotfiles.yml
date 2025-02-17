@@ -1,2 +1,4 @@
 - name: Initialize ChezMoi
   shell: bash -c "source activate_brew.sh && chezmoi init --apply PookieBuns"
+- name: Fzf Sesh
+  shell: git clone https://github.com/PookieBuns/fzf-sesh.git ~/.local/share/fzf-sesh
